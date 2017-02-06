@@ -1,0 +1,720 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+h1, h2, h5, h6 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+a {
+    outline: none !important;
+}
+/*-----Header & Banner Starts-------*/
+.navbar-brand {
+    font-family: cursive;
+    color: #ffffff;
+    font-size: 26px;
+}
+.navbar-brand:hover {
+    color: #EB233C;
+}
+.navbar-toggle {
+    background-color: #fff;
+}
+.navbar-toggle .icon-bar {
+    background-color: RGBA(0, 0, 0, 0.48);
+}
+
+.navbar-img{
+    background-color: #FFFFFF;  
+    border: #000000 2px solid;
+    width: 62px;
+    height: 62px;  
+}
+
+.banner {
+    background-attachment: fixed;
+    background-color: #645862;
+    background-image: url(../images/background_1.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    cursor: default;
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+.bg-overlay {
+    padding: 160px 0 220px;
+    background-color: RGBA(150, 150, 150, 0.80);
+}
+.banner-text h2 {
+    font-size: 50px;
+}
+.banner-text h2 span {
+    color: #000000;
+}
+.banner-text p {
+    font-size: 15px;
+}
+.banner-button {
+    border: rgba(0, 0, 0, 1) 2px solid;
+    padding: 12px 35px;
+    color: #000080;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px 25px 25px 25px;
+    font-size: 15px;
+    margin-top: 50px;
+}
+.banner-button:hover {
+    transition: all 0.3s ease-in;
+    background-color: #FFFFFF;
+    border: #000000 1px solid;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #000000;
+}
+.banner-button:active{
+    transition: all 0.8s ease-in;
+}
+.mynav {
+    transition: all 0.8s ease-in;
+    /*background: rgb(6, 37, 99) none repeat scroll 0% 0%;*/
+    background: rgb(0, 0, 128) none repeat scroll 0% 0%;
+}
+.mynav li a {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.nav > li > a:focus, .nav > li > a {
+    color: #FFFFFF;
+}
+.nav > li > a:focus, .nav > li > a:hover, .nav > li > a:focus, .nav > li.active > a {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-bottom: 2px solid #00c9ff;
+}
+.navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 13px;
+}
+/*-----Header & Banner Ends-------*/
+
+/*-----Features Starts-------*/
+.features {
+    padding: 100px 0px;
+    float: left;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.icon-box {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 0px;
+    display: inline-box;
+    border: rgba(204, 204, 204, 0.18) 1px solid;
+    border-radius: 50%;
+    padding: 0px !important;
+}
+.icon-box i {
+    line-height: 70px;
+    font-size: 25px;
+    color: #000080;
+}
+.feature-text {
+    padding-left: 20px;
+}
+.feature-text h4 {
+    color: rgb(0, 150, 255);
+}
+
+.features-item:hover{
+    cursor: pointer;
+    transition: all 0.3s ease-in;    
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #000080;
+}
+
+.features-icon:hover{
+    cursor: pointer;
+    transition: all 0.2s ease-in;    
+    text-align: center;
+    font-size: 40px;
+    color: rgb(0, 150, 255);
+}
+
+/*-----Features Ends-------*/
+
+
+/*-----Portfolio or Work Starts-------*/
+
+.portfolio {
+    padding: 50px 0;
+    /*background-color: #D8D8D8;*/
+    background-color: rgba(216, 216, 216, 0.3);
+    float: left;
+    width: 100%;
+}
+.portfolio-item {
+    margin-bottom: 30px;
+}
+.img-portfolio {
+    width: 500px;
+    height: 333px;
+    /*border: #000000 2px solid;*/
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+/*.img-portfolio:hover {
+    opacity: 0.8;
+}*/
+.portfolio h3 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #000080;
+    display: inline-block;
+    line-height: 35px;
+}
+.view-more {
+    padding: 12px 35px;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px 25px 25px 25px;
+    font-size: 15px;
+    background-color: #EB233C;
+    margin-top: 20px;
+}
+.view-more:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#portfolio {
+    padding: 100px 0;
+}
+#portfolio .portfolio-filter {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 50px;
+    display: inline-block;
+}
+#portfolio .portfolio-filter > li {
+    float: left;
+    display: block;
+    margin:0 1px;
+}
+#portfolio .portfolio-filter > li a {
+    display: block;
+    padding: 7px 15px;
+    background: #e5e5e5;
+    color: #64686d;
+    position: relative;
+}
+#portfolio .portfolio-filter > li a:hover,
+#portfolio .portfolio-filter > li a.active {
+    background: #000080;
+    color: #fff;
+    font-weight: bold;
+}
+
+#portfolio .portfolio-items {
+    margin: -15px;
+}
+#portfolio .portfolio-item {
+    width: 33%;
+    float: left;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+}
+#portfolio .portfolio-item .portfolio-item-inner {
+    position: relative;
+}
+#portfolio .portfolio-item .portfolio-item-inner .portfolio-info {
+    opacity: 0;
+    transition: opacity 400ms;
+    -webkit-transition: opacity 400ms;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    background: rgba(0, 0, 175, 0.5);
+    color: #fff;
+}
+#portfolio .portfolio-item .portfolio-item-inner .portfolio-info h3 {
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    padding-top: 180px;
+}
+#portfolio .portfolio-item .portfolio-item-inner .portfolio-info .preview {
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    top: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#portfolio .portfolio-item:hover .portfolio-info {
+    opacity: 3.0;
+}
+#portfolio .portfolio-item:hover .portfolio-item-inner .portfolio-info .preview {
+    top: 60px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+/* Start: Recommended Isotope styles */
+/**** Isotope Filtering ****/
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+/**** Isotope CSS3 transitions ****/
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
+}
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+}
+/* End: Recommended Isotope styles */
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+/*-----Portfolio or Work Ends-------*/
+
+
+/*-----Testimonials Starts-------*/
+.testimonials {
+    padding: 50px 0px;
+    width: 100%;
+    float: left;
+    /*background-color: #BDBDBD;*/
+    background-color: rgba(189, 189, 189, 0.3);
+}
+.testimonials h3 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #000080;
+    display: inline-block;
+    line-height: 35px;
+}
+.test {
+    background-color: rgba(250, 250, 250, 0.8);
+    padding: 20px 20px 10px;
+    border: rgba(0, 0, 0, 1) 1px solid;
+    border-radius: 10px;
+}
+.item {
+}
+.test p {
+    font-size: 15px;
+    font-weight: 300;
+}
+.test i {
+    padding: 0px 8px;
+}
+.test-img {
+    margin-top: 30px;
+}
+.test-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgba(68, 51, 68, 0.46);
+    display: inline-block;
+}
+.test-img p {
+    display: inline-block;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.owl-theme .owl-controls .owl-page span {
+    background-color: #000080 !important;
+}
+/*-----Testimonials Ends-------*/
+
+
+/*-----Call to action Starts-------*/
+.call-to-action {
+    background-attachment: fixed;
+    background-color: #383838;
+    background-image: url("../images/ws.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    cursor: default;
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+.call-overlay {
+    padding: 50px 0px;
+    background-color: RGBA(80, 80, 80, 0.80);
+}
+.subscribe-text {
+    text-align: left;
+}
+.subscribe-text h3 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00c9ff;
+    display: inline-block;
+    line-height: 35px;
+    text-align: left;
+}
+.subscribe-button {
+    padding: 12px 35px;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px 25px 25px 25px;
+    font-size: 15px;
+    background-color: #EB233C;
+    margin-top: 30px;
+}
+
+.insperion-text{
+    letter-spacing: 2px;    
+    font-size: 28px;
+    font-family: cursive;
+    color: #000000;
+}
+
+.subscribe-button:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+/*-----Call to action Starts-------*/
+
+/*-----About Starts-------*/
+.about {
+    padding: 50px 0px;
+    width: 100%;
+    float: left;
+    /*background-color: #585858;*/
+    background-color: rgba(88, 88, 88, 0.3);
+    color: #000000;
+}
+.about h3 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #000080;
+    display: inline-block;
+    line-height: 35px;
+}
+.about-text p {
+    font-size: 15px;
+    font-weight: 300;
+}
+.counter-item h5 {
+    margin: 0px !important;
+    font-family: 'Work Sans', sans-serif;
+}
+.timer {
+    color: #00c9ff;
+    font-size: 50px;
+    font-weight: 200;
+}
+.block {
+    padding-left: 0px !important;
+}
+/*-----About Ends-------*/
+
+/*-----Team-------*/
+
+.team{
+    /*background-color: #424242;*/
+    background-color: rgba(66, 66, 66, 0.3);
+    padding: 50px 0px;
+    width: 100%;
+    float: left;
+    color: #000000;;
+}
+
+.team h3 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #000080;
+    display: inline-block;
+    line-height: 35px;
+}
+
+/*-----End Team ----------*/
+
+
+/*-----Contact Starts-------*/
+.contact {
+    /*background-color: #2E2E2E;*/
+    background-color: rgba(46, 46, 46, 0.3);
+    color: #000000;
+    padding: 50px 0px;
+    float: left;
+    width: 100%;
+}
+.contact h3 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #000080;
+    display: inline-block;
+    line-height: 35px;
+}
+.contact-form {
+    margin-top: 45px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #000000;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    border-bottom: 2px solid #00c9ff;
+    resize: none;
+    margin-top: 25px;
+}
+.form-control:hover, .form-control:focus {
+    box-shadow: none;
+    border-bottom: 2px solid #242424;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #242424 !important;
+}
+input:-moz-placeholder, textarea:-moz-placeholder { /* Firefox 18- */
+    color: #242424 !important;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {  /* Firefox 19+ */
+    color: #242424 !important;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #242424 !important;
+}
+.contact-button {
+    border: none;
+    padding: 12px 35px;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px 25px 25px 25px;
+    font-size: 15px;
+    background-color: #000080;
+    margin-top: 30px;
+}
+.contact-button:hover {
+    transition: all 0.3s ease-in;
+    background-color: #FFFFFF;
+    border: #000000 1px solid;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #000000;
+}
+.address {
+    color: #000000;
+    margin-top: 70px;
+}
+.address h4 {
+    color: #000080;
+    font-size: 22px;
+}
+.address p {
+    font-size: 16px;
+    font-weight: 500;
+}
+.email i {
+    color: #000080;
+    padding-right: 10px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.email {
+    padding-top: 15px;
+}
+
+/*-----Contact End-------*/
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    float: left;
+    padding: 20px 0px;
+    /*background-color: #000000;*/
+    background-color: rgba(255, 255, 255, 0.3);
+}
+footer span.copyright {
+    line-height: 40px;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+footer ul.quicklinks {
+    margin-bottom: 0px;
+}
+footer ul.quicklinks a {
+    color: #00c9ff;
+    text-decoration: underline;
+    line-height: 40px;
+    text-decoration: none;
+}
+ul.social-buttons {
+    margin-bottom: 0;
+}
+ul.social-buttons li a {
+    background-color: #222;
+    border-radius: 100%;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    outline: 0 none;
+    transition: all 0.3s ease 0s;
+    width: 40px;
+}
+ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
+    background-color: #000080;
+}
+.btn:focus, .btn:active, .btn.active, .btn:active:focus {
+    outline: 0 none;
+}
+
+
+
+@media (min-width:0px) and (max-width: 600px) {
+    .bg-overlay {
+        padding: 180px 0 120px;
+    }
+    .banner-text h2 {
+        font-size: 35px;
+    }
+    nav > li > a:focus, .nav > li > a:hover, .nav > li > a:focus, .nav > li.active > a {
+        border-bottom: none;
+        ;
+    }
+    .features, .about, .portfolio, .contact, .testimonials {
+        padding: 50px 0px;
+    }
+}
+
+/*-------Modal----------*/
+
+#ModalDesarrollo .modal-header, #ModalConsultoria .modal-header,
+#ModalVentas .modal-header {
+    background: #4d4d4d;
+    color: #FFFFFF;
+}
+
+#ModalMVV .modal-header {
+    background: #d4aa00;
+    color: #FFFFFF;
+}
+
+#ModalDesarrollo, #ModalConsultoria,
+#ModalMVV, #ModalVentas {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.modal-body{
+    padding: 5px 30px;    
+    color: #000000;
+    text-decoration: none;
+}
+
+#desc1, #desc2, #desc3, #desc4{
+    padding: 10px 0px;
+}
+
+#descc1, #descc2, #descc3, #descc4{
+    padding: 10px 0px;
+}
+
+#descv1, #descv2{
+    padding: 10px 0px;
+}
+
+.text70 {
+    width: 70%;
+}
+
+/*----Modal End----*/
+
+
+.loading{
+    margin-top: 70px; 
+    margin-bottom: 200px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
